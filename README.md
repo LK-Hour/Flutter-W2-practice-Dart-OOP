@@ -10,7 +10,7 @@
 
 **4 Epic Exercises** | **Complete UML Diagrams** | **Production-Ready Code**
 
-[🎮 Getting Started](#-quick-start) • [📚 Exercises](#-the-exercises) • [🎨 UML Diagrams](#-uml-diagrams-overview) • [💡 Concepts](#-key-concepts-you-will-master)
+[🎮 Getting Started](#-quick-start) • [📚 Exercises](#-the-exercises) • [🎨 UML Diagrams](#-uml-diagrams-overview) • [💡 Concepts](#-key-concepts-you-will-master) • [📄 Assignment PDF](./S2%20-%20PRACTICE%20-%20Manipulate%20Dart%20OOP.pdf)
 
 ---
 
@@ -387,6 +387,7 @@ void withdraw(double amount) {
 
 | Document | Description | Status |
 |----------|-------------|--------|
+| 📄 [**S2 - PRACTICE - Manipulate Dart OOP.pdf**](./S2%20-%20PRACTICE%20-%20Manipulate%20Dart%20OOP.pdf) | Original assignment requirements | 📋 Reference |
 | 📄 [**IMPLEMENTATION_SUMMARY.md**](./IMPLEMENTATION_SUMMARY.md) | Complete overview of all exercises | ✅ Ready |
 | 🏢 [**EX-1-UML.md**](./EX-1-UML.md) | Employee system architecture | ✅ Ready |
 | 🏦 [**EX-2-UML.md**](./EX-2-UML.md) | Banking system with relationships | ⭐ Featured |
