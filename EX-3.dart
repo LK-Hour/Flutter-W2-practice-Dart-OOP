@@ -1,14 +1,12 @@
 class MyDuration {
   final int _milliseconds;
 
-  // Private constructor
   MyDuration._(this._milliseconds) {
     if (_milliseconds < 0) {
       throw Exception('Duration cannot be negative!');
     }
   }
 
-  // Named constructors
   MyDuration.fromHours(int hours) : _milliseconds = hours * 60 * 60 * 1000 {
     if (_milliseconds < 0) {
       throw Exception('Duration cannot be negative!');
@@ -27,20 +25,17 @@ class MyDuration {
     }
   }
 
-  // Getter
+  // Getter method
   int get milliseconds => _milliseconds;
 
-  // Operator overloading: >
   bool operator >(MyDuration other) {
     return _milliseconds > other._milliseconds;
   }
 
-  // Operator overloading: +
   MyDuration operator +(MyDuration other) {
     return MyDuration._(_milliseconds + other._milliseconds);
   }
 
-  // Operator overloading: -
   MyDuration operator -(MyDuration other) {
     int result = _milliseconds - other._milliseconds;
     if (result < 0) {
@@ -49,7 +44,6 @@ class MyDuration {
     return MyDuration._(result);
   }
 
-  // Display the duration in a readable format
   @override
   String toString() {
     int seconds = (_milliseconds / 1000).round();

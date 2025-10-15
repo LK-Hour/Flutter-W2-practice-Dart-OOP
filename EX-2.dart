@@ -5,12 +5,11 @@ class BankAccount {
 
   BankAccount(this._accountId, this._accountOwner) : _balance = 0;
 
-  // Getters
+  // Getter methods for BankAccount
   int get accountId => _accountId;
   String get accountOwner => _accountOwner;
   String get balance => 'Balance: \$$_balance';
 
-  // Method to add money to the account
   void credit(double amount) {
     if (amount <= 0) {
       throw Exception('Credit amount must be positive!');
@@ -18,7 +17,6 @@ class BankAccount {
     _balance += amount;
   }
 
-  // Method to withdraw money from the account
   void withdraw(double amount) {
     if (amount <= 0) {
       throw Exception('Withdrawal amount must be positive!');
@@ -40,26 +38,22 @@ class Bank {
 
   Bank({required String name}) : _name = name;
 
-  // Getter
+  // Getter methods for Bank
   String get name => _name;
   List<BankAccount> get accounts => List.unmodifiable(_accounts);
 
-  // Create a new bank account
   BankAccount createAccount(int accountId, String accountOwner) {
-    // Check if account ID already exists
     for (var account in _accounts) {
       if (account.accountId == accountId) {
         throw Exception('Account with ID $accountId already exists!');
       }
     }
 
-    // Create new account
     var newAccount = BankAccount(accountId, accountOwner);
     _accounts.add(newAccount);
     return newAccount;
   }
 
-  // Find account by ID
   BankAccount? findAccountById(int accountId) {
     for (var account in _accounts) {
       if (account.accountId == accountId) {
@@ -95,7 +89,6 @@ void main() {
     print(e); // Output: Account with ID 100 already exists!
   }
 
-  // Additional test
   print('\n${myBank}');
   var honglyAccount = myBank.createAccount(101, 'Honlgy');
   honglyAccount.credit(500);
