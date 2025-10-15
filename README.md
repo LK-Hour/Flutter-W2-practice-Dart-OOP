@@ -10,7 +10,7 @@
 
 **4 Epic Exercises** | **Complete UML Diagrams** | **Production-Ready Code**
 
-[🎮 Getting Started](#-quick-start) • [📚 Exercises](#-exercises) • [🎨 UML Diagrams](#-uml-diagrams) • [💡 Concepts](#-key-concepts)
+[🎮 Getting Started](#-quick-start) • [📚 Exercises](#-the-exercises) • [🎨 UML Diagrams](#-uml-diagrams-overview) • [💡 Concepts](#-key-concepts-you-will-master)
 
 ---
 
@@ -315,7 +315,7 @@ Just open any `*-UML.md` file and enjoy the visual feast! 🎨
 
 ---
 
-## � Key Concepts You'll Master
+## 💡 Key Concepts You will Master
 
 <div align="center">
 
