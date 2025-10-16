@@ -28,7 +28,6 @@ classDiagram
     }
 
     class OrderItem {
-        -Product _product
         -int _quantity
         +OrderItem(product: Product, quantity: int)
         +Product get product
@@ -56,8 +55,6 @@ classDiagram
 
     class Shop {
         -String _name
-        -List~Product~ _products
-        -List~Order~ _orders
         +Shop(name: String)
         +String get name
         +List~Product~ get products
