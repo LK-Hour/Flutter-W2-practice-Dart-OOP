@@ -1,4 +1,12 @@
-enum Skill { FLUTTER, DART, OTHER }
+enum Skill {
+  FLUTTER(5000),
+  DART(3000),
+  OTHER(1000);
+
+  final int bonus;
+
+  const Skill(this.bonus);
+}
 
 class Address {
   final String street;
@@ -56,13 +64,13 @@ class Employee {
     for (var skill in _skills) {
       switch (skill) {
         case Skill.FLUTTER:
-          salary += 5000;
+          salary += Skill.FLUTTER.bonus;
           break;
         case Skill.DART:
-          salary += 3000;
+          salary += Skill.DART.bonus;
           break;
         case Skill.OTHER:
-          salary += 1000;
+          salary += Skill.OTHER.bonus;
           break;
       }
     }
